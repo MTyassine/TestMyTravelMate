@@ -1,0 +1,24 @@
+user_index:
+    path:     /
+    defaults: { _controller: "TestBundle:Default:affichagePoint" }
+    methods:  [GET, POST]
+
+user_show:
+    path:     /{id}/show
+    defaults: { _controller: "TestBundle:User:show" }
+    methods:  GET
+
+user_new:
+    path:     /new
+    defaults: { _controller: "TestBundle:User:new" }
+    methods:  [GET, POST]
+
+user_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TestBundle:User:edit" }
+    methods:  [GET, POST]
+
+user_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TestBundle:User:delete" }
+    methods:  DELETE
